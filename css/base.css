@@ -1,0 +1,71 @@
+:root {
+    --darkness-background-color: #202020;
+    --grey-background-color: #212529;
+    --white-color: #fff;
+    --text-color: rgb(222, 222, 222);
+    --text-grey-color: #999;
+}
+
+html {
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.line + .line {
+    border-top: 2px solid var(--darkness-background-color);
+}
+
+.flex {
+    display: flex;
+}
+.flex-center-y {
+    display: flex;
+    align-items: center;
+}
+.flex-center-x {
+    display: flex;
+    justify-content: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-none {
+    user-select: none;
+}
+
+.smooth-transition {
+    transition: all .3s ease-in-out;
+}
+
+.btn {
+    border: none;
+    border-radius: 6px;
+    background-color: var(--grey-background-color);
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn + .btn {
+    margin-left: 18px;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+}
+.grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.gap-2 {
+    gap: 8px;
+}
